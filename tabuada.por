@@ -1,22 +1,17 @@
 programa
 {
-	inclua biblioteca Matematica --> Mat
 	
 	funcao inicio()
 	{
-		inteiro a,b,c,r,s
-		real d
-		escreva("Digite o valor de A: ")
-		leia(a)
-		escreva("Digite o valor de B: ")
-		leia(b)
-		escreva("Digite o valor de C: ")
-		leia(c)
-		r=Mat.potencia((a+b),2)   
-		s=Mat.potencia((b+c),2)
-		d= (r+s) / 2
-		escreva("O resultado da expressão é: ", d)
-		
+		inteiro x,tab,res
+		escreva("Qual tabuada você deseja? ")
+		leia(tab)
+		limpa()
+		para(x=1;x<=10;x++)
+		{
+			res=tab * x
+			escreva(x + "x" + tab + " = ", res + "\n")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 84; 
+ * @POSICAO-CURSOR = 119; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

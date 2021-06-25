@@ -1,22 +1,18 @@
 programa
 {
-	inclua biblioteca Matematica --> Mat
+	inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		inteiro a,b,c,r,s
-		real d
-		escreva("Digite o valor de A: ")
-		leia(a)
-		escreva("Digite o valor de B: ")
-		leia(b)
-		escreva("Digite o valor de C: ")
-		leia(c)
-		r=Mat.potencia((a+b),2)   
-		s=Mat.potencia((b+c),2)
-		d= (r+s) / 2
-		escreva("O resultado da expressão é: ", d)
-		
+		inteiro contador=10
+
+		enquanto(contador>0){
+			escreva("Contagem regressiva, saia imediatamente do local... " , contador, "\n")
+			contador = contador -1
+			Util.aguarde(1000)
+		}
+		limpa()
+		escreva("Kabummmmmmm.... ")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 84; 
+ * @POSICAO-CURSOR = 221; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,11 +1,13 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
+		//variáveis
 		cadeia nome
 		real n1,n2,n3, media
+		//variáveis
 		escreva("Digite seu nome:")
 		leia(nome)
 		escreva("Digite sua primeira nota:")
@@ -16,6 +18,7 @@ programa
 		leia(n3)
 		media=(n1 + n2 + n3)/3
 		limpa()
+		//entradas	
 			se (media>=7.0)
 			{
 				escreva("Aluno(a):", nome, ", você foi aprovado(a) com nota", mat.arredondar(media, 2), " Parabéns!!!")
@@ -35,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 678; 
+ * @POSICAO-CURSOR = 759; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
